@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZAmazingKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZAmazingKit.'
-
+  s.version          = '0.1'
+  s.summary          = 'My amazing kit.'
+   s.swift_version   = '4.1'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
@@ -24,13 +24,13 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/zframeworkdev/ZAmazingKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zframeworkdev' => 'zframeworkdev@gmail.com' }
+  s.author           = { 'Zaldy Bughaw' => 'zframeworkdev@gmail.com' }
   s.source           = { :git => 'https://github.com/zframeworkdev/ZAmazingKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZAmazingKit/Classes/**/*'
+  s.source_files = 'Sources/*.swift'
   
   # s.resource_bundles = {
   #   'ZAmazingKit' => ['ZAmazingKit/Assets/*.png']
