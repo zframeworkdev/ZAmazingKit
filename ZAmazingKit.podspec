@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZAmazingKit'
-  s.version          = '0.1'
+  s.version          = '0.3'
   s.summary          = 'My amazing kit.'
    s.swift_version   = '4.1'
 # This description is used to generate tags and improve search results.
