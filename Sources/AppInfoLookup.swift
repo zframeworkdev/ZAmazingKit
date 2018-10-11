@@ -26,7 +26,7 @@ public final class AppInfoLookup: NSObject {
         // so you can add all key beased on your requirement.
         
     }
-    class func checkVersion(completion:((_ appVersion: String)->())?) {
+    public class func checkVersion(completion:((_ appVersion: String)->())?) {
         // self.appId
         let url = URL(string: "http://itunes.apple.com/lookup?bundleId=com.internetbrands.smb")
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in

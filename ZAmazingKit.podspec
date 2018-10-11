@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZAmazingKit'
-  s.version          = '0.4'
+  s.version          = '0.5'
   s.summary          = 'My amazing kit.'
    s.swift_version   = '4.2'
 # This description is used to generate tags and improve search results.
@@ -39,4 +39,10 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+
+  # Dependencies
+  s.dependency 'Firebase/Core'
+  s.dependency 'Firebase/RemoteConfig'
+
 end

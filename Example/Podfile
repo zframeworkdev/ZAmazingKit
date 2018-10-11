@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'ZAmazingKit_Example' do
   pod 'ZAmazingKit', :path => '../'
+  pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
 
   target 'ZAmazingKit_Tests' do
     inherit! :search_paths

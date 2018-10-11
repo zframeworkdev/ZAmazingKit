@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIApplication {
-    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    public class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(controller: navigationController.visibleViewController)
         }
@@ -46,7 +46,7 @@ extension UIAlertAction {
 }
 
 extension String {
-    func sizeForWidth(width: CGFloat, font: UIFont) -> CGSize {
+    public func sizeForWidth(width: CGFloat, font: UIFont) -> CGSize {
         let attr = [NSAttributedString.Key.font: font]
         let height = NSString(string: self).boundingRect(with: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude), options:.usesLineFragmentOrigin, attributes: attr, context: nil).height
         return CGSize(width: width, height: ceil(height))
@@ -54,7 +54,7 @@ extension String {
 }
 
 extension UIAlertController {
-    @discardableResult class func showAlert(buttonTitles:[String]?, title: String?, message: String?, cancel:String?, handler: ((_ actionIndex: Int)->Void)?) -> UIAlertController? {
+    @discardableResult public class func showAlert(buttonTitles:[String]?, title: String?, message: String?, cancel:String?, handler: ((_ actionIndex: Int)->Void)?) -> UIAlertController? {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
@@ -85,7 +85,7 @@ extension UIAlertController {
         return alert
     }
     
-    class func showAlertWithTextView(title: String, text: String, buttonTitles:[String]?,
+    public class func showAlertWithTextView(title: String, text: String, buttonTitles:[String]?,
                                      handler: ((_ actionIndex: Int)->Void)?) {
         
         //let text = "After 06/30/2017, the <insert app name> on this device will no longer be supported, but you can still access this app on the web at www.google.com"
