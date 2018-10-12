@@ -44,5 +44,5 @@ TODO: Add long description of the pod here.
   # Dependencies
   s.dependency 'Firebase/Core'
   s.dependency 'Firebase/RemoteConfig'
-
+  s.static_framework = true
 end
